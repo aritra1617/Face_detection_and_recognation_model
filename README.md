@@ -24,6 +24,7 @@ Head: The head is responsible for detecting objects in the image.
 
 
 # 3. Data Collection and Preprocessing:
+
 The success of any machine learning project heavily relies on the availability of high-quality data. Two datasets are utilized in this project, one for training a face detection model, and another for recognizing people in videos.
 
 Face Detection Dataset: we have used ‘Wider Face’ dataset for face detection, which has 32,203 images and registered 393,703 faces with significant variations in scale, position and occlusion. 
@@ -40,19 +41,16 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 # 4. Model Training:
 ## 4.1 Face Detection:
 ### Procedure for Face Detection:
-1. Collect dataset: Collect a dataset of images that contain faces to train the model.
 
+1. Collect dataset: Collect a dataset of images that contain faces to train the model.
 
 2. Annotate the dataset: Annotate with bounding boxes to create a labeled dataset. The YOLOv4 algorithm expects annotations in a specific format, including class id, bounding box center coordinates, and dimensions (height and width).
 
-
 3. Configure the Hyperparameters: Configure the "csresnext50-panet-spp-original-optimal.cfg" file with appropriate parameters, including the number of classes, anchors, filters, height, width, and batch size.
-
 
 4. Train the model: Train the model on annotated dataset, This involves specifying the paths to training and validation datasets, the location of the configuration file and the pre-trained weights, and the number of epochs to train the model.
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/1f9914b1-0425-467e-9ba3-ec6e36f3535b)
-
 
 ## 4.2 Face Recognition:
 
