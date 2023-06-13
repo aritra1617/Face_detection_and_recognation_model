@@ -29,12 +29,16 @@ The success of any machine learning project heavily relies on the availability o
 
 Face Detection Dataset: we have used ‘Wider Face’ dataset for face detection, which has 32,203 images and registered 393,703 faces with significant variations in scale, position and occlusion. 
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/dea7d3cf-a5c4-4b32-a05d-d8c52ca8530e)
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/d2540bfb-811a-4b2b-b389-54f5c9ad7783)
+
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85a2d3e0-64f4-47ec-92be-0eeed254df93)
+
 
 Video Dataset: We analyzed a 32-second video with three individuals, dividing it into one-second intervals to obtain a total of 32 frames. In these frames, we detected a total of 96 faces, with each person represented in 32 frames.
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/73a7b67e-c8cd-4524-b2e6-47db4bf84407)
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/8323f12d-dbf2-43c2-804a-c3376f36ff49)
 
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/031054da-7229-43c7-89dc-2d13472ebaf5)
 
 To ensure optimal performance, we preprocessed the dataset by normalizing pixel values, augmenting the data with techniques such as random cropping and flipping, and splitting it into training, validation, and testing sets.
 
