@@ -111,4 +111,4 @@ We evaluated the performance of our face detection and recognition system on a s
 
 # 6. Challenges
 
-In conclusion, building a face recognition model using YOLOv4 with ResNext as the backbone presents both challenges and opportunities. Dealing with imbalanced classes, hardware restrictions, missing annotation files, normalizing the dataset were the main challenges.![image]
+In conclusion, building a face recognition model using YOLOv4 with ResNext as the backbone presents both challenges and opportunities. Dealing with imbalanced classes, hardware restrictions, missing annotation files, normalizing the dataset were the main challenges.
