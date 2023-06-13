@@ -20,7 +20,7 @@ Neck: The neck is responsible for fusing the features extracted by the backbone 
 
 Head: The head is responsible for detecting objects in the image. 
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/9a2daf2f-654d-434f-903c-88f0555bc4b3)
+                    ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/9a2daf2f-654d-434f-903c-88f0555bc4b3)
 
 
 # 3. Data Collection and Preprocessing:
@@ -29,14 +29,15 @@ The success of any machine learning project heavily relies on the availability o
 
 Face Detection Dataset: we have used ‘Wider Face’ dataset for face detection, which has 32,203 images and registered 393,703 faces with significant variations in scale, position and occlusion. 
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/d2540bfb-811a-4b2b-b389-54f5c9ad7783) ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85a2d3e0-64f4-47ec-92be-0eeed254df93)
+                  ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/d2540bfb-811a-4b2b-b389-54f5c9ad7783)
+                  ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85a2d3e0-64f4-47ec-92be-0eeed254df93)
 
 
 Video Dataset: We analyzed a 32-second video with three individuals, dividing it into one-second intervals to obtain a total of 32 frames. In these frames, we detected a total of 96 faces, with each person represented in 32 frames.
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/8323f12d-dbf2-43c2-804a-c3376f36ff49)
+                  ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/8323f12d-dbf2-43c2-804a-c3376f36ff49)
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/031054da-7229-43c7-89dc-2d13472ebaf5)
+                  ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/031054da-7229-43c7-89dc-2d13472ebaf5)
 
 To ensure optimal performance, we preprocessed the dataset by normalizing pixel values, augmenting the data with techniques such as random cropping and flipping, and splitting it into training, validation, and testing sets.
 
@@ -52,7 +53,7 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 
 4. Train the model: Train the model on annotated dataset, This involves specifying the paths to training and validation datasets, the location of the configuration file and the pre-trained weights, and the number of epochs to train the model.
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/1f9914b1-0425-467e-9ba3-ec6e36f3535b)
+                  ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/1f9914b1-0425-467e-9ba3-ec6e36f3535b)
 
 ## 4.2 Face Recognition:
 
@@ -67,20 +68,21 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 4. Annotation Creation: Generate an annotation file for each image in the YOLOv4 format. Save these annotation files in a dedicated folder.
 
 5. Dataset Preparation: Prepare the resulting dataset to train a face recognition model. Include images of all individuals featured in the video.
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/ba9e1812-5c0a-441b-b33a-f2cc66caaee5)
+
+                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/ba9e1812-5c0a-441b-b33a-f2cc66caaee5)
 
 # Loss measurement:
 
 The model uses a combination of localization loss, confidence loss, and classification loss to train and optimize the network.
 
 
-![Screenshot 2023-06-13 213159](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/13a8823e-4c21-4762-8f4f-2ef890d80cd6)
+                ![Screenshot 2023-06-13 213159](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/13a8823e-4c21-4762-8f4f-2ef890d80cd6)
 
-![Screenshot 2023-06-13 213123](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/93b3c2b5-97d7-4ae1-bb7d-9d1bf6310af7)
+                ![Screenshot 2023-06-13 213123](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/93b3c2b5-97d7-4ae1-bb7d-9d1bf6310af7) 
 
-![Screenshot 2023-06-13 213227](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/33829b36-1b45-44f1-9745-c376a0244f1f)
+                ![Screenshot 2023-06-13 213227](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/33829b36-1b45-44f1-9745-c376a0244f1f)
 
-![Screenshot 2023-06-13 213215](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/26b3e19e-6bf1-4cf9-8cbc-80ff1d4f0dcf)
+                ![Screenshot 2023-06-13 213215](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/26b3e19e-6bf1-4cf9-8cbc-80ff1d4f0dcf)
 
 
 # 5. Experimental Results:
@@ -88,20 +90,19 @@ We evaluated the performance of our face detection and recognition system on a s
 
 ## Face detection model result
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85369872-07f7-4bf4-b902-4aca03200dec)
+                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85369872-07f7-4bf4-b902-4aca03200dec)
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/fff170c2-493e-442a-a0b1-36bf5f182b16)
+                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/fff170c2-493e-442a-a0b1-36bf5f182b16)
 
 
 ## Face recognition model result
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/18b6d734-215f-44f8-8480-232710e73822)
+                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/18b6d734-215f-44f8-8480-232710e73822)
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/b9bba483-055a-4d2e-bfcc-1254b89ffec1)
+                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/b9bba483-055a-4d2e-bfcc-1254b89ffec1)
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/0450164e-998f-4c90-8f43-f583c399d07d)
+                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/0450164e-998f-4c90-8f43-f583c399d07d)
 
 
 # 6. Challenges
 
-In conclusion, building a face recognition model using YOLOv4 with ResNext as the backbone presents both challenges and opportunities. Dealing with imbalanced classes, hardware restrictions, missing annotation files, normalizing the dataset were the main challenges.![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/3976ba4b-50af-4ca9-876d-ca8b00f8a357)
-
+In conclusion, building a face recognition model using YOLOv4 with ResNext as the backbone presents both challenges and opportunities. Dealing with imbalanced classes, hardware restrictions, missing annotation files, normalizing the dataset were the main challenges.![image]
