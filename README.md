@@ -27,14 +27,14 @@ Head: The head is responsible for detecting objects in the image.
 
 The success of any machine learning project heavily relies on the availability of high-quality data. Two datasets are utilized in this project, one for training a face detection model, and another for recognizing people in videos.
 
-Face Detection Dataset: we have used ‘Wider Face’ dataset for face detection, which has 32,203 images and registered 393,703 faces with significant variations in scale, position and occlusion. 
+## Face Detection Dataset: we have used ‘Wider Face’ dataset for face detection, which has 32,203 images and registered 393,703 faces with significant variations in scale, position and occlusion. 
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/d2540bfb-811a-4b2b-b389-54f5c9ad7783)
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85a2d3e0-64f4-47ec-92be-0eeed254df93)
 
 
-Video Dataset: We analyzed a 32-second video with three individuals, dividing it into one-second intervals to obtain a total of 32 frames. In these frames, we detected a total of 96 faces, with each person represented in 32 frames.
+## Video Dataset: We analyzed a 32-second video with three individuals, dividing it into one-second intervals to obtain a total of 32 frames. In these frames, we detected a total of 96 faces, with each person represented in 32 frames.
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/8323f12d-dbf2-43c2-804a-c3376f36ff49)
 
@@ -54,8 +54,6 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 
 4. Train the model: Train the model on annotated dataset, This involves specifying the paths to training and validation datasets, the location of the configuration file and the pre-trained weights, and the number of epochs to train the model.
 
-  
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/1f9914b1-0425-467e-9ba3-ec6e36f3535b)
 
 ## 4.2 Face Recognition:
 
@@ -71,7 +69,6 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 
 5. Dataset Preparation: Prepare the resulting dataset to train a face recognition model. Include images of all individuals featured in the video.
 
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/ba9e1812-5c0a-441b-b33a-f2cc66caaee5)
 
 # Loss measurement:
 
@@ -91,17 +88,19 @@ We evaluated the performance of our face detection and recognition system on a s
 
 ## Face detection model result
 
-                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85369872-07f7-4bf4-b902-4aca03200dec)
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85369872-07f7-4bf4-b902-4aca03200dec)
 
-                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/fff170c2-493e-442a-a0b1-36bf5f182b16)
+
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/fff170c2-493e-442a-a0b1-36bf5f182b16)
 
 
 ## Face recognition model result
-                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/18b6d734-215f-44f8-8480-232710e73822)
+                
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/18b6d734-215f-44f8-8480-232710e73822)
+                
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/b9bba483-055a-4d2e-bfcc-1254b89ffec1)
 
-                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/b9bba483-055a-4d2e-bfcc-1254b89ffec1)
-
-                ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/0450164e-998f-4c90-8f43-f583c399d07d)
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/0450164e-998f-4c90-8f43-f583c399d07d)
 
 
 # 6. Challenges
