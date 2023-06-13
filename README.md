@@ -39,7 +39,7 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 
 # 4. Model Training:
 ## 4.1 Face Detection:
-* Procedure for Face Detection:
+### Procedure for Face Detection:
 1. Collect dataset: Collect a dataset of images that contain faces to train the model.
 
 
@@ -56,7 +56,7 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 
 ## 4.2 Face Recognition:
 
-* Procedure for Face Recognition:
+### Procedure for Face Recognition:
 
 1. Extracting Frames: Utilize the Python OpenCV module to extract one static image per second from the tested video.
 
@@ -73,49 +73,15 @@ To ensure optimal performance, we preprocessed the dataset by normalizing pixel 
 
 The model uses a combination of localization loss, confidence loss, and classification loss to train and optimize the network.
 
-Classification loss: If an object is detected, the classification loss at each cell is the squared error of the class conditional probabilities for each class.
 
-			∑1_(𝑖=0)^(𝑆^2)▒∆_𝑖^𝑜𝑏𝑗  ∑1_(𝑐∈𝑐𝑙𝑎𝑠𝑠𝑒𝑠)▒〖(𝑝_𝑖 (c) − 𝑝 ̂_(𝑖 ) (c))〗^2 
-		
-		
-		where                                  
-		 ∆_𝑖𝑗^𝑜𝑏𝑗 = 1 if an object appears in cell i, otherwise 0.
-		𝑝 ̂_(𝑖 ) (c) denotes the conditional class probability for class c in cell i.
+![Screenshot 2023-06-13 213159](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/13a8823e-4c21-4762-8f4f-2ef890d80cd6)
 
-Localization Loss: The localization loss measures the errors in the predicted boundary box locations and sizes.
+![Screenshot 2023-06-13 213123](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/93b3c2b5-97d7-4ae1-bb7d-9d1bf6310af7)
 
-      λcoord ∑1_(𝑖=0)^(𝑠^2)▒∑1_(𝑗=0)^𝐵▒∆_𝑖𝑗^𝑜𝑏𝑗  [ (xi - 𝑥 ̂i)2 + (yi - 𝑦 ̂i)2 ] + λcoord ∑1_(𝑖=0)^(𝑠^2)▒∑1_(𝑗=0)^𝐵▒∆_𝑖𝑗^𝑜𝑏𝑗  [ (√(𝑤_𝑖 ) - √(𝑤 ̂_𝑖 ) )2 + (√(ℎ_𝑖 ) - √(ℎ ̂_𝑖 ) )2 ] 
-      
-Where
+![Screenshot 2023-06-13 213227](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/33829b36-1b45-44f1-9745-c376a0244f1f)
 
-      ∆_𝑖𝑗^𝑜𝑏𝑗 = 1 if the jth boundary box in cell i is responsible for detecting the object, otherwise 0.
-      
-      λcoord increase the weight for the loss in the boundary box coordinates.
+![Screenshot 2023-06-13 213215](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/26b3e19e-6bf1-4cf9-8cbc-80ff1d4f0dcf)
 
-
-Confidence Loss: The confidence loss measures the accuracy of the predicted objectness score, which indicates the presence of a face in the bounding box.
-∑1_(𝑖=0)^(𝑠^2)▒∑1_(𝑗=0)^𝐵▒∆_𝑖𝑗^𝑜𝑏𝑗  (𝐶_𝑖  − 𝐶 ̂_𝑖  )^2  
-    
-
-     Where
- 
-      ∆_𝑖𝑗^𝑜𝑏𝑗 = 1 if the jth boundary box in cell i is responsible for detecting the object, otherwise 0.
-〖      𝐶 ̂〗_𝑖 is the box confidence score of the box j in cell i.
-
-
- Confidence Loss:
-
-            If an object is not detected in the box, the confidence loss is:
-𝜆_𝑛𝑜𝑜𝑏𝑗 ∑1_(𝑖=0)^(𝑠^2)▒∑1_(𝑗=0)^𝐵▒∆_𝑖𝑗^𝑛𝑜𝑜𝑏𝑗   (𝐶_𝑖  − 𝐶 ̂_𝑖  )^2
- 
-
-where
-∆_𝑖𝑗^𝑛𝑜𝑜𝑏𝑗 = 1 is the complement of  ∆_𝑖𝑗^𝑜𝑏𝑗.
-𝐶 ̂_𝑖 is the box confidence score of the box j in cell i.
-𝜆_𝑛𝑜𝑜𝑏𝑗 weights down the loss when detecting background.
- 
-The final loss adds localization, confidence and classification losses together. 
-     
 
 # 5. Experimental Results:
 We evaluated the performance of our face detection and recognition system on a separate test dataset. For face detection, we measured the accuracy in terms of precision, recall, and F1-score. We also conducted real-time experiments to assess the computational efficiency of our system.
@@ -123,13 +89,19 @@ We evaluated the performance of our face detection and recognition system on a s
 ## Face detection model result
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85369872-07f7-4bf4-b902-4aca03200dec)
-![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/fff170c2-493e-442a-a0b1-36bf5f182b16)
 
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/fff170c2-493e-442a-a0b1-36bf5f182b16)
 
 
 ## Face recognition model result
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/18b6d734-215f-44f8-8480-232710e73822)
+
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/b9bba483-055a-4d2e-bfcc-1254b89ffec1)
 
+![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/0450164e-998f-4c90-8f43-f583c399d07d)
 
+
+# 6. Challenges
+
+In conclusion, building a face recognition model using YOLOv4 with ResNext as the backbone presents both challenges and opportunities. Dealing with imbalanced classes, hardware restrictions, missing annotation files, normalizing the dataset were the main challenges.![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/3976ba4b-50af-4ca9-876d-ca8b00f8a357)
 
