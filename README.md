@@ -1,11 +1,11 @@
-Abstract:
+##Abstract:
 The purpose of this project is to develop a face detection and recognition system capable of analyzing video footage and accurately detecting and recognizing faces in real-time. The project utilizes the YOLOv4 object detection algorithm and the ResNeXt deep convolutional neural network architecture to achieve high performance in terms of both detection accuracy and computational efficiency.
 
-#1. Introduction:
+##1. Introduction:
 In recent years, face detection and recognition have gained significant attention due to their wide range of applications in various domains such as surveillance, security, and human-computer interaction. The ability to detect and recognize faces from video footage in real-time has become a crucial task. This project aims to address this challenge by combining the power of YOLOv4, a state-of-the-art object detection algorithm, with the ResNeXt architecture, a powerful convolutional neural network for feature extraction.
 
-#2. Methodology:
-##2.1 YOLOv4:
+##2. Methodology:
+###2.1 YOLOv4:
 YOLOv4 (You Only Look Once) is an advanced object detection algorithm that achieves real-time performance by employing a single neural network to predict bounding boxes and class probabilities directly, integrating with a strong backbone like ResNeXt for feature extraction enhances system's capability for complex computer vision tasks.
 
 ##2.2 ResNeXt:
