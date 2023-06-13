@@ -27,16 +27,20 @@ Head: The head is responsible for detecting objects in the image.
 
 The success of any machine learning project heavily relies on the availability of high-quality data. Two datasets are utilized in this project, one for training a face detection model, and another for recognizing people in videos.
 
-## Face Detection Dataset: we have used ‘Wider Face’ dataset for face detection, which has 32,203 images and registered 393,703 faces with significant variations in scale, position and occlusion. 
+## Face Detection Dataset:
+we have used ‘Wider Face’ dataset for face detection, which has 32,203 images and registered 393,703 faces with significant variations in scale, position and occlusion. 
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/d2540bfb-811a-4b2b-b389-54f5c9ad7783)
+
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/85a2d3e0-64f4-47ec-92be-0eeed254df93)
 
 
-## Video Dataset: We analyzed a 32-second video with three individuals, dividing it into one-second intervals to obtain a total of 32 frames. In these frames, we detected a total of 96 faces, with each person represented in 32 frames.
+## Video Dataset:
+We analyzed a 32-second video with three individuals, dividing it into one-second intervals to obtain a total of 32 frames. In these frames, we detected a total of 96 faces, with each person represented in 32 frames.
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/8323f12d-dbf2-43c2-804a-c3376f36ff49)
+
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/031054da-7229-43c7-89dc-2d13472ebaf5)
 
@@ -98,7 +102,9 @@ We evaluated the performance of our face detection and recognition system on a s
                 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/18b6d734-215f-44f8-8480-232710e73822)
                 
+                
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/b9bba483-055a-4d2e-bfcc-1254b89ffec1)
+
 
 ![image](https://github.com/aritra1617/Face_recongnition_model/assets/99130267/0450164e-998f-4c90-8f43-f583c399d07d)
 
